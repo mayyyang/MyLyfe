@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB144F581A8EDC8D00BFB167 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB144F571A8EDC8D00BFB167 /* FilterViewController.m */; };
 		FB5FE09E1A817F920086F709 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5FE09D1A817F920086F709 /* EditViewController.m */; };
 		FB7C38EB1A80BA22000EDA5E /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7C38EA1A80BA22000EDA5E /* MenuViewController.m */; };
 		FB982B1A1A802740009C2BA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB982B191A802740009C2BA1 /* main.m */; };
@@ -31,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB144F561A8EDC8D00BFB167 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		FB144F571A8EDC8D00BFB167 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
 		FB5FE09C1A817F920086F709 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		FB5FE09D1A817F920086F709 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		FB7C38E91A80BA22000EDA5E /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 				FB5FE09D1A817F920086F709 /* EditViewController.m */,
 				FBA4E3E91A8350F4008F0F4A /* EditInterestsViewController.h */,
 				FBA4E3EA1A8350F4008F0F4A /* EditInterestsViewController.m */,
+				FB144F561A8EDC8D00BFB167 /* FilterViewController.h */,
+				FB144F571A8EDC8D00BFB167 /* FilterViewController.m */,
 				FBA4E3EC1A835233008F0F4A /* EditGenderViewController.h */,
 				FBA4E3ED1A835233008F0F4A /* EditGenderViewController.m */,
 				FB982B211A802740009C2BA1 /* Main.storyboard */,
@@ -245,6 +250,7 @@
 				FB982B1A1A802740009C2BA1 /* main.m in Sources */,
 				FB7C38EB1A80BA22000EDA5E /* MenuViewController.m in Sources */,
 				FB5FE09E1A817F920086F709 /* EditViewController.m in Sources */,
+				FB144F581A8EDC8D00BFB167 /* FilterViewController.m in Sources */,
 				FBA4E3EE1A835233008F0F4A /* EditGenderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
