@@ -127,32 +127,6 @@
             </objects>
             <point key="canvasLocation" x="975" y="282"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="pMb-lm-uMc">
-            <objects>
-                <tableViewController id="TeA-Pb-4Iz" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Sk1-eH-soL">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="z6V-Rr-4bQ">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z6V-Rr-4bQ" id="Fyz-1R-A1x">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="TeA-Pb-4Iz" id="Uxj-Kz-bls"/>
-                            <outlet property="delegate" destination="TeA-Pb-4Iz" id="mmV-cf-a3H"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8kq-3K-dn0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1305" y="-496"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="XvC-zJ-uHD">
             <objects>
@@ -226,6 +200,24 @@
                 </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="2068" y="-420"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="JpB-2R-Dsq">
+            <objects>
+                <viewController id="iiL-bm-R3f" customClass="MenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kdC-ta-bSk"/>
+                        <viewControllerLayoutGuide type="bottom" id="r3m-RN-Mfr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D3s-cc-VXW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wEe-V5-3z0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1384" y="-420"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9a4-wE-sez">
@@ -470,7 +462,7 @@
                         <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" image="menu-50" id="Lhv-2g-2OM">
                             <connections>
-                                <segue destination="TeA-Pb-4Iz" kind="show" id="slH-gO-jZc"/>
+                                <segue destination="iiL-bm-R3f" kind="show" id="OSq-gq-p2t"/>
                             </connections>
                         </barButtonItem>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Tdd-1f-jMI">

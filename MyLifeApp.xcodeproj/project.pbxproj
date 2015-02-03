@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB7C38EB1A80BA22000EDA5E /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7C38EA1A80BA22000EDA5E /* MenuViewController.m */; };
 		FB982B1A1A802740009C2BA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB982B191A802740009C2BA1 /* main.m */; };
 		FB982B1D1A802740009C2BA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB982B1C1A802740009C2BA1 /* AppDelegate.m */; };
 		FB982B201A802740009C2BA1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB982B1F1A802740009C2BA1 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB7C38E91A80BA22000EDA5E /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		FB7C38EA1A80BA22000EDA5E /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		FB982B141A802740009C2BA1 /* MyLifeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLifeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB982B181A802740009C2BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB982B191A802740009C2BA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				FB982B1C1A802740009C2BA1 /* AppDelegate.m */,
 				FB982B1E1A802740009C2BA1 /* ViewController.h */,
 				FB982B1F1A802740009C2BA1 /* ViewController.m */,
+				FB7C38E91A80BA22000EDA5E /* MenuViewController.h */,
+				FB7C38EA1A80BA22000EDA5E /* MenuViewController.m */,
 				FB982B211A802740009C2BA1 /* Main.storyboard */,
 				FB982B241A802740009C2BA1 /* Images.xcassets */,
 				FB982B261A802740009C2BA1 /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 				FB982B201A802740009C2BA1 /* ViewController.m in Sources */,
 				FB982B1D1A802740009C2BA1 /* AppDelegate.m in Sources */,
 				FB982B1A1A802740009C2BA1 /* main.m in Sources */,
+				FB7C38EB1A80BA22000EDA5E /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +418,7 @@
 				FB982B391A802741009C2BA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB982B3A1A802741009C2BA1 /* Build configuration list for PBXNativeTarget "MyLifeAppTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +427,7 @@
 				FB982B3C1A802741009C2BA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
