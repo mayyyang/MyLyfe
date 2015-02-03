@@ -241,13 +241,12 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="mH5-8u-nGU" id="fb6-m6-cL9"/>
-                        <segue destination="Z6I-bF-thD" kind="show" identifier="profile" id="xC2-4b-Xwu"/>
-                        <segue destination="avc-3Z-vLE" kind="show" id="4SA-Fw-ONN"/>
+                        <segue destination="Z6I-bF-thD" kind="show" identifier="segue" id="TVX-gS-vcT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wEe-V5-3z0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1396" y="-433"/>
+            <point key="canvasLocation" x="1396" y="-420"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9a4-wE-sez">
@@ -735,7 +734,7 @@
         <!--View Controller-->
         <scene sceneID="rPX-QO-amV">
             <objects>
-                <viewController id="Z6I-bF-thD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="segue" id="Z6I-bF-thD" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gDy-8y-R9S"/>
                         <viewControllerLayoutGuide type="bottom" id="0sV-Du-hnR"/>
@@ -780,7 +779,7 @@
         <image name="menu-50" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HSg-OM-ZFm"/>
         <segue reference="8Xz-tE-1t1"/>
+        <segue reference="3ci-Va-4G3"/>
     </inferredMetricsTieBreakers>
 </document>

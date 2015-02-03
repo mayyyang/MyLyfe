@@ -82,10 +82,10 @@
     
     switch (indexPath.row) {
         case 0:
-            viewController = [storyboard instantiateViewControllerWithIdentifier:@"profile"];
+            viewController = [storyboard instantiateViewControllerWithIdentifier:@"segue"];
             break;
         case 1:
-            viewController = [storyboard instantiateViewControllerWithIdentifier:@"viewController2"];
+            viewController = [storyboard instantiateViewControllerWithIdentifier:@"segue"];
             break;
         case 2:
             viewController = [storyboard instantiateViewControllerWithIdentifier:@"viewController3"];
