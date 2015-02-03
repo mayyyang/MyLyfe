@@ -30,6 +30,8 @@
 /* Begin PBXFileReference section */
 		FB7C38E91A80BA22000EDA5E /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		FB7C38EA1A80BA22000EDA5E /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		FB7C38ED1A80C75D000EDA5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Base; path = Base.lproj/EditViewController.h; sourceTree = "<group>"; };
+		FB7C38EF1A80C75D000EDA5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Base; path = Base.lproj/EditViewController.m; sourceTree = "<group>"; };
 		FB982B141A802740009C2BA1 /* MyLifeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLifeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB982B181A802740009C2BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB982B191A802740009C2BA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -90,6 +92,8 @@
 				FB982B1F1A802740009C2BA1 /* ViewController.m */,
 				FB7C38E91A80BA22000EDA5E /* MenuViewController.h */,
 				FB7C38EA1A80BA22000EDA5E /* MenuViewController.m */,
+				FB7C38EC1A80C75D000EDA5E /* EditViewController.h */,
+				FB7C38EE1A80C75D000EDA5E /* EditViewController.m */,
 				FB982B211A802740009C2BA1 /* Main.storyboard */,
 				FB982B241A802740009C2BA1 /* Images.xcassets */,
 				FB982B261A802740009C2BA1 /* LaunchScreen.xib */,
@@ -250,6 +254,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		FB7C38EC1A80C75D000EDA5E /* EditViewController.h */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB7C38ED1A80C75D000EDA5E /* Base */,
+			);
+			name = EditViewController.h;
+			sourceTree = "<group>";
+		};
+		FB7C38EE1A80C75D000EDA5E /* EditViewController.m */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB7C38EF1A80C75D000EDA5E /* Base */,
+			);
+			name = EditViewController.m;
+			sourceTree = "<group>";
+		};
 		FB982B211A802740009C2BA1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

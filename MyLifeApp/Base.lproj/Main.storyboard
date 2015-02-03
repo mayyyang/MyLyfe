@@ -731,17 +731,26 @@
             </objects>
             <point key="canvasLocation" x="738" y="-1110"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit View Controller-->
         <scene sceneID="rPX-QO-amV">
             <objects>
-                <viewController storyboardIdentifier="segue" id="Z6I-bF-thD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="segue" id="Z6I-bF-thD" customClass="EditViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gDy-8y-R9S"/>
                         <viewControllerLayoutGuide type="bottom" id="0sV-Du-hnR"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Qgh-mC-KlT">
+                    <view key="view" contentMode="scaleToFill" id="Qgh-mC-KlT" customClass="Edi">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5is-l7-hMg">
+                                <rect key="frame" x="271" y="273" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
