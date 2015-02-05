@@ -8,7 +8,8 @@
 
 #import "EditViewController.h"
 
-@interface EditViewController ()
+@interface EditViewController () <UIScrollViewDelegate>
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 
@@ -16,11 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    EditViewController *VC = [[EditViewController alloc] init];
-//    self.navigationController.navigationBarHidden=NO;
-//    [self.navigationController pushViewController:VC animated:NO];
 
-
+    [self.scrollView setContentSize:CGSizeMake(0, 960)];
+    [self.scrollView setShowsHorizontalScrollIndicator:NO];
 
 
 }
@@ -34,4 +33,12 @@
     [self.navigationController setNavigationBarHidden:YES];
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)sender
+{
+    if (sender.contentOffset.x != 0) {
+        CGPoint offset = sender.contentOffset;
+        offset.x = 0;
+        sender.contentOffset = offset;
+    }
+}
 @end
