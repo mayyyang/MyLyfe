@@ -16,6 +16,8 @@
 		FB982B251A802740009C2BA1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB982B241A802740009C2BA1 /* Images.xcassets */; };
 		FB982B281A802740009C2BA1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB982B261A802740009C2BA1 /* LaunchScreen.xib */; };
 		FB982B341A802741009C2BA1 /* MyLifeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB982B331A802741009C2BA1 /* MyLifeAppTests.m */; };
+		FBA4E3EB1A8350F4008F0F4A /* EditInterestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA4E3EA1A8350F4008F0F4A /* EditInterestsViewController.m */; };
+		FBA4E3EE1A835233008F0F4A /* EditGenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA4E3ED1A835233008F0F4A /* EditGenderViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,10 @@
 		FB982B2D1A802741009C2BA1 /* MyLifeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLifeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB982B321A802741009C2BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB982B331A802741009C2BA1 /* MyLifeAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLifeAppTests.m; sourceTree = "<group>"; };
+		FBA4E3E91A8350F4008F0F4A /* EditInterestsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditInterestsViewController.h; sourceTree = "<group>"; };
+		FBA4E3EA1A8350F4008F0F4A /* EditInterestsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditInterestsViewController.m; sourceTree = "<group>"; };
+		FBA4E3EC1A835233008F0F4A /* EditGenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditGenderViewController.h; sourceTree = "<group>"; };
+		FBA4E3ED1A835233008F0F4A /* EditGenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditGenderViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,10 @@
 				FB7C38EA1A80BA22000EDA5E /* MenuViewController.m */,
 				FB5FE09C1A817F920086F709 /* EditViewController.h */,
 				FB5FE09D1A817F920086F709 /* EditViewController.m */,
+				FBA4E3E91A8350F4008F0F4A /* EditInterestsViewController.h */,
+				FBA4E3EA1A8350F4008F0F4A /* EditInterestsViewController.m */,
+				FBA4E3EC1A835233008F0F4A /* EditGenderViewController.h */,
+				FBA4E3ED1A835233008F0F4A /* EditGenderViewController.m */,
 				FB982B211A802740009C2BA1 /* Main.storyboard */,
 				FB982B241A802740009C2BA1 /* Images.xcassets */,
 				FB982B261A802740009C2BA1 /* LaunchScreen.xib */,
@@ -229,11 +239,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBA4E3EB1A8350F4008F0F4A /* EditInterestsViewController.m in Sources */,
 				FB982B201A802740009C2BA1 /* ViewController.m in Sources */,
 				FB982B1D1A802740009C2BA1 /* AppDelegate.m in Sources */,
 				FB982B1A1A802740009C2BA1 /* main.m in Sources */,
 				FB7C38EB1A80BA22000EDA5E /* MenuViewController.m in Sources */,
 				FB5FE09E1A817F920086F709 /* EditViewController.m in Sources */,
+				FBA4E3EE1A835233008F0F4A /* EditGenderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -49,17 +49,32 @@
     switch (indexPath.row)
     {
         case 0:
-            cell.textLabel.text = @"Home";
+            cell.textLabel.text = @"John Doe";
             cell.detailTextLabel.text = @"Detail of App 1...";
             break;
         case 1:
-            cell.textLabel.text = @"Profile";
+            cell.textLabel.text = @"Home";
             cell.detailTextLabel.text = @"Detail of App 2 app...";
             break;
         case 2:
-            cell.textLabel.text = @"Settings";
+            cell.textLabel.text = @"Discovery Preferences";
             cell.detailTextLabel.text =
             @"Detail of App 3...";
+            break;
+        case 3:
+            cell.textLabel.text = @"Profile";
+            break;
+        case 4:
+            cell.textLabel.text = @"Settings";
+            break;
+        case 5:
+            cell.textLabel.text = @"Matches";
+            break;
+        case 6:
+            cell.textLabel.text = @"Invite Friends";
+            break;
+        case 7:
+            cell.textLabel.text = @"Feedback";
             break;
             
         default:
@@ -72,7 +87,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 {
-    return self.tableData.count;
+    return 7;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -90,6 +105,10 @@
         case 2:
             viewController = [storyboard instantiateViewControllerWithIdentifier:@"viewController3"];
             break;
+        case 3:
+            viewController = [storyboard instantiateViewControllerWithIdentifier:@"viewController3"];
+            break;
+            
             
         default:
             viewController = [storyboard instantiateViewControllerWithIdentifier:@"viewController4"];
