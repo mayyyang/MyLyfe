@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 May Yang. All rights reserved.
 //
 
+#import <FacebookSDK/FacebookSDK.h>
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -14,6 +15,14 @@
 
 @implementation AppDelegate
 
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    // attempt to extract a token from the url
+    return [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -36,6 +45,8 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    // Logs 'install' and 'app activate' App Events.
+    [FBAppEvents activateApp];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
