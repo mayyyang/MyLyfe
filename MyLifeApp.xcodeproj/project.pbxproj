@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1BC6B9EA1A91457300444695 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC6B9E91A91457300444695 /* LoginViewController.m */; };
 		1BC6B9EF1A9188CC00444695 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC6B9EE1A9188CC00444695 /* FacebookSDK.framework */; };
+		1BE71B511A9299200081E6CF /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE71B501A9299200081E6CF /* PageContentViewController.m */; };
 		FB144F581A8EDC8D00BFB167 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB144F571A8EDC8D00BFB167 /* FilterViewController.m */; };
 		FB18D8071A91520D00A9982F /* ShowMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18D8061A91520D00A9982F /* ShowMeViewController.m */; };
 		FB5FE09E1A817F920086F709 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5FE09D1A817F920086F709 /* EditViewController.m */; };
@@ -52,6 +53,8 @@
 		1BC6B9E81A91457300444695 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		1BC6B9E91A91457300444695 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		1BC6B9EE1A9188CC00444695 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		1BE71B4F1A9299200081E6CF /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
+		1BE71B501A9299200081E6CF /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
 		FB144F561A8EDC8D00BFB167 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
 		FB144F571A8EDC8D00BFB167 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
 		FB18D8051A91520D00A9982F /* ShowMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMeViewController.h; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 			children = (
 				1BC6B9E81A91457300444695 /* LoginViewController.h */,
 				1BC6B9E91A91457300444695 /* LoginViewController.m */,
+				1BE71B4F1A9299200081E6CF /* PageContentViewController.h */,
+				1BE71B501A9299200081E6CF /* PageContentViewController.m */,
 				FB982B1E1A802740009C2BA1 /* ViewController.h */,
 				FB982B1F1A802740009C2BA1 /* ViewController.m */,
 				FB7C38E91A80BA22000EDA5E /* MenuViewController.h */,
@@ -326,6 +331,7 @@
 			files = (
 				FBA4E3EB1A8350F4008F0F4A /* EditInterestsViewController.m in Sources */,
 				FB18D8071A91520D00A9982F /* ShowMeViewController.m in Sources */,
+				1BE71B511A9299200081E6CF /* PageContentViewController.m in Sources */,
 				FB982B201A802740009C2BA1 /* ViewController.m in Sources */,
 				FB982B1D1A802740009C2BA1 /* AppDelegate.m in Sources */,
 				FB982B1A1A802740009C2BA1 /* main.m in Sources */,
