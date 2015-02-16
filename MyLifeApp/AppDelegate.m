@@ -6,8 +6,10 @@
 //  Copyright (c) 2015 May Yang. All rights reserved.
 //
 
-#import <FacebookSDK/FacebookSDK.h>
 #import "AppDelegate.h"
+#import <FacebookSDK/FacebookSDK.h>
+#import <Parse/Parse.h>
+
 
 @interface AppDelegate ()
 
@@ -25,14 +27,39 @@
     
     // You can add your app-specific url handling code here if needed
     
+    
     return wasHandled;
+
     
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [FBLoginView class];
+    
+    [Parse setApplicationId:@"WxUQm4bx4SUlq07ZlmeE68oaZBun68d4lAcvX2Hg"
+                  clientKey:@"onCAwrZE4LsKOaGp4WVqFvVLUm09KMM3zJy0RQ5L"];
+    
+    // Register for Push Notitications
+    UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
+                                                    UIUserNotificationTypeBadge |
+                                                    UIUserNotificationTypeSound);
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes
+                                                                             categories:nil];
+    [application registerUserNotificationSettings:settings];
+    [application registerForRemoteNotifications];
     return YES;
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // Store the deviceToken in the current installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [PFPush handlePush:userInfo];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
