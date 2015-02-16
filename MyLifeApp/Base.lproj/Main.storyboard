@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -33,6 +33,15 @@
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="490"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vi8-Yj-G9n">
+                                        <rect key="frame" x="328" y="67" width="46" height="30"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="LGu-f8-sNp" kind="show" id="hRE-cs-4MK"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -51,31 +60,25 @@
                                     <constraint firstAttribute="width" constant="39" id="Wwj-j2-tmu"/>
                                 </constraints>
                             </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bO-L3-yEt">
-                                <rect key="frame" x="150" y="534" width="300" height="46"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="fJ1-c5-5o7"/>
-                                    <constraint firstAttribute="width" constant="300" id="qzb-4p-EUS"/>
-                                </constraints>
-                                <state key="normal" image="login">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eDe-e6-xjl" customClass="FBLoginView">
+                                <rect key="frame" x="158" y="530" width="300" height="146"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <action selector="loginButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qMb-KT-cM5"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="jOV-Uh-qS6"/>
                                 </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.17647058823529413" green="0.27058823529411763" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="1bO-L3-yEt" secondAttribute="centerX" id="TCy-Sz-GDv"/>
                             <constraint firstAttribute="centerX" secondItem="GIE-M5-m6F" secondAttribute="centerX" id="YlM-nm-oEY"/>
                             <constraint firstAttribute="centerX" secondItem="GwV-JB-iKe" secondAttribute="centerX" id="Zn4-g1-95k"/>
-                            <constraint firstItem="1bO-L3-yEt" firstAttribute="top" secondItem="GwV-JB-iKe" secondAttribute="bottom" constant="44" id="oKx-Jq-XQO"/>
                             <constraint firstItem="GIE-M5-m6F" firstAttribute="top" secondItem="GwV-JB-iKe" secondAttribute="bottom" constant="8" id="pP8-xE-wRV"/>
                             <constraint firstItem="GwV-JB-iKe" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="she-QN-vFE"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="1bO-L3-yEt" secondAttribute="bottom" constant="20" id="yLy-AQ-SoT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginView" destination="eDe-e6-xjl" id="t7J-Ew-1ne"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -1456,7 +1459,6 @@
         <image name="chat_message-50" width="50" height="50"/>
         <image name="checkmark-50" width="50" height="50"/>
         <image name="info-50" width="50" height="50"/>
-        <image name="login" width="300" height="46"/>
         <image name="menu-50" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>

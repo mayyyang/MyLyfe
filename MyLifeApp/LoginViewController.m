@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 May Yang. All rights reserved.
 //
 
+#import <FacebookSDK/FacebookSDK.h>
 #import "LoginViewController.h"
 
 @interface LoginViewController ()
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    FBLoginView *loginView =
+    [[FBLoginView alloc] initWithReadPermissions:
+     @[@"public_profile", @"email", @"user_friends"]];
+    self.loginView.readPermissions = @[@"public_profile", @"email", @"user_friends"];
 }
 
 - (IBAction)loginButton:(UIButton *)sender
