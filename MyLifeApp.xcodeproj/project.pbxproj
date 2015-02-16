@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1BC6B9EA1A91457300444695 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC6B9E91A91457300444695 /* LoginViewController.m */; };
-		1BC6B9EC1A914F6100444695 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC6B9EB1A914F6100444695 /* FacebookSDK.framework */; };
+		1BC6B9EF1A9188CC00444695 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC6B9EE1A9188CC00444695 /* FacebookSDK.framework */; };
 		FB144F581A8EDC8D00BFB167 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB144F571A8EDC8D00BFB167 /* FilterViewController.m */; };
 		FB18D8071A91520D00A9982F /* ShowMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18D8061A91520D00A9982F /* ShowMeViewController.m */; };
 		FB5FE09E1A817F920086F709 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5FE09D1A817F920086F709 /* EditViewController.m */; };
@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		1BC6B9E81A91457300444695 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		1BC6B9E91A91457300444695 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		1BC6B9EB1A914F6100444695 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		1BC6B9EE1A9188CC00444695 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		FB144F561A8EDC8D00BFB167 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
 		FB144F571A8EDC8D00BFB167 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
 		FB18D8051A91520D00A9982F /* ShowMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMeViewController.h; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BC6B9EC1A914F6100444695 /* FacebookSDK.framework in Frameworks */,
+				1BC6B9EF1A9188CC00444695 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +87,7 @@
 		1BC6B9ED1A914F6800444695 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1BC6B9EB1A914F6100444695 /* FacebookSDK.framework */,
+				1BC6B9EE1A9188CC00444695 /* FacebookSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -400,6 +400,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/achakravarthi/Documents/FacebookSDK,
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = MyLifeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -418,6 +419,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/achakravarthi/Documents/FacebookSDK,
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = MyLifeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
