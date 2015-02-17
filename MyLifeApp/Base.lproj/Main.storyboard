@@ -48,7 +48,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="kT0-Fn-zaR" kind="show" id="N2A-lV-w0N"/>
+                                            <segue destination="SGM-De-F38" kind="show" id="ntB-MW-P4c"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -598,10 +598,10 @@
             </objects>
             <point key="canvasLocation" x="2429" y="-1465"/>
         </scene>
-        <!--View Controller-->
+        <!--Reveal View Controller-->
         <scene sceneID="xhC-J2-jK4">
             <objects>
-                <viewController id="SGM-De-F38" sceneMemberID="viewController">
+                <viewController id="SGM-De-F38" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1QK-x5-2ns"/>
                         <viewControllerLayoutGuide type="bottom" id="9VN-Jf-5ma"/>
@@ -611,6 +611,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="iiL-bm-R3f" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="7iz-6e-h8m"/>
+                        <segue destination="kT0-Fn-zaR" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="aOg-hN-Azo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Yb-i9-57w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -929,10 +933,10 @@
             </objects>
             <point key="canvasLocation" x="2429" y="-642"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="9a4-wE-sez">
             <objects>
-                <viewController id="fqz-7G-Uq7" sceneMemberID="viewController">
+                <viewController id="fqz-7G-Uq7" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bV0-tP-l2s"/>
                         <viewControllerLayoutGuide type="bottom" id="fKQ-io-Y4S"/>
@@ -1170,11 +1174,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="jcn-Fu-nJD">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" image="menu-50" id="Lhv-2g-2OM">
-                            <connections>
-                                <segue destination="iiL-bm-R3f" kind="show" id="zi5-cP-N1f"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" image="menu-50" id="Lhv-2g-2OM"/>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Tdd-1f-jMI">
                             <rect key="frame" x="180" y="7" width="240" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1501,8 +1501,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="BMH-Ae-qR2"/>
-        <segue reference="5bv-I4-EV4"/>
-        <segue reference="s7j-am-ok0"/>
-        <segue reference="3ci-Va-4G3"/>
+        <segue reference="c9p-YZ-hyg"/>
+        <segue reference="HSg-OM-ZFm"/>
+        <segue reference="8Xz-tE-1t1"/>
     </inferredMetricsTieBreakers>
 </document>

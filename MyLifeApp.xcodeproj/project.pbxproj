@@ -37,6 +37,8 @@
 		FB982B341A802741009C2BA1 /* MyLifeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB982B331A802741009C2BA1 /* MyLifeAppTests.m */; };
 		FBA4E3EB1A8350F4008F0F4A /* EditInterestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA4E3EA1A8350F4008F0F4A /* EditInterestsViewController.m */; };
 		FBA4E3EE1A835233008F0F4A /* EditGenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA4E3ED1A835233008F0F4A /* EditGenderViewController.m */; };
+		FBC4B8EF1A92D02C005450CD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC4B8EE1A92D02C005450CD /* SWRevealViewController.m */; };
+		FBC4B8F21A92D20A005450CD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC4B8F11A92D20A005450CD /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,10 @@
 		FBA4E3EA1A8350F4008F0F4A /* EditInterestsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditInterestsViewController.m; sourceTree = "<group>"; };
 		FBA4E3EC1A835233008F0F4A /* EditGenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditGenderViewController.h; sourceTree = "<group>"; };
 		FBA4E3ED1A835233008F0F4A /* EditGenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditGenderViewController.m; sourceTree = "<group>"; };
+		FBC4B8ED1A92D02C005450CD /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		FBC4B8EE1A92D02C005450CD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		FBC4B8F01A92D20A005450CD /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		FBC4B8F11A92D20A005450CD /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +163,7 @@
 		FB982B0B1A802740009C2BA1 = {
 			isa = PBXGroup;
 			children = (
+				FB982B211A802740009C2BA1 /* Main.storyboard */,
 				FB982B161A802740009C2BA1 /* MyLifeApp */,
 				FB982B301A802741009C2BA1 /* MyLifeAppTests */,
 				FB982B151A802740009C2BA1 /* Products */,
@@ -176,12 +183,15 @@
 		FB982B161A802740009C2BA1 /* MyLifeApp */ = {
 			isa = PBXGroup;
 			children = (
+				FBC4B8EC1A92D017005450CD /* SWRevealViewController */,
 				1BC6B9E81A91457300444695 /* LoginViewController.h */,
 				1BC6B9E91A91457300444695 /* LoginViewController.m */,
 				1BE71B4F1A9299200081E6CF /* PageContentViewController.h */,
 				1BE71B501A9299200081E6CF /* PageContentViewController.m */,
 				FB982B1E1A802740009C2BA1 /* ViewController.h */,
 				FB982B1F1A802740009C2BA1 /* ViewController.m */,
+				FBC4B8F01A92D20A005450CD /* MainViewController.h */,
+				FBC4B8F11A92D20A005450CD /* MainViewController.m */,
 				FB7C38E91A80BA22000EDA5E /* MenuViewController.h */,
 				FB7C38EA1A80BA22000EDA5E /* MenuViewController.m */,
 				FB5FE09C1A817F920086F709 /* EditViewController.h */,
@@ -194,7 +204,6 @@
 				FB144F571A8EDC8D00BFB167 /* FilterViewController.m */,
 				FB18D8051A91520D00A9982F /* ShowMeViewController.h */,
 				FB18D8061A91520D00A9982F /* ShowMeViewController.m */,
-				FB982B211A802740009C2BA1 /* Main.storyboard */,
 				FB982B241A802740009C2BA1 /* Images.xcassets */,
 				FB982B261A802740009C2BA1 /* LaunchScreen.xib */,
 				FB982B171A802740009C2BA1 /* Supporting Files */,
@@ -228,6 +237,15 @@
 				FB982B321A802741009C2BA1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBC4B8EC1A92D017005450CD /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FBC4B8ED1A92D02C005450CD /* SWRevealViewController.h */,
+				FBC4B8EE1A92D02C005450CD /* SWRevealViewController.m */,
+			);
+			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +351,7 @@
 				FB18D8071A91520D00A9982F /* ShowMeViewController.m in Sources */,
 				1BE71B511A9299200081E6CF /* PageContentViewController.m in Sources */,
 				FB982B201A802740009C2BA1 /* ViewController.m in Sources */,
+				FBC4B8F21A92D20A005450CD /* MainViewController.m in Sources */,
 				FB982B1D1A802740009C2BA1 /* AppDelegate.m in Sources */,
 				FB982B1A1A802740009C2BA1 /* main.m in Sources */,
 				FB7C38EB1A80BA22000EDA5E /* MenuViewController.m in Sources */,
@@ -340,6 +359,7 @@
 				FB5FE09E1A817F920086F709 /* EditViewController.m in Sources */,
 				FB144F581A8EDC8D00BFB167 /* FilterViewController.m in Sources */,
 				FBA4E3EE1A835233008F0F4A /* EditGenderViewController.m in Sources */,
+				FBC4B8EF1A92D02C005450CD /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +388,7 @@
 				FB982B221A802740009C2BA1 /* Base */,
 			);
 			name = Main.storyboard;
+			path = MyLifeApp;
 			sourceTree = "<group>";
 		};
 		FB982B261A802740009C2BA1 /* LaunchScreen.xib */ = {
