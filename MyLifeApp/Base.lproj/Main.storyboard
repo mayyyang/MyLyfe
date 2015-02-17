@@ -1191,6 +1191,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="sidebarMenuButton" destination="Lhv-2g-2OM" id="ynd-8g-nc9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6c3-Tj-32l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

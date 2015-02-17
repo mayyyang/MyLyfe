@@ -7,8 +7,10 @@
 //
 
 #import "MainViewController.h"
+#import "SWRevealViewController.h"
 
 @interface MainViewController ()
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarMenuButton;
 
 @end
 
@@ -16,7 +18,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    SWRevealViewController *revealViewController = self.revealViewController;
+    if (revealViewController)
+    {
+        [self.sidebarMenuButton setTarget:self.revealViewController];
+        [self.sidebarMenuButton setAction:@selector(revealToggle:)];
+        [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
