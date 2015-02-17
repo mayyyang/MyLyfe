@@ -47,6 +47,9 @@
                                         <state key="normal" title="Button">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="kT0-Fn-zaR" kind="show" id="N2A-lV-w0N"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1527,9 +1530,10 @@
         <image name="menu-50" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="c9p-YZ-hyg"/>
-        <segue reference="8Xz-tE-1t1"/>
         <segue reference="HSg-OM-ZFm"/>
+        <segue reference="yzl-OJ-omU"/>
+        <segue reference="8Xz-tE-1t1"/>
+        <segue reference="c9p-YZ-hyg"/>
         <segue reference="BMH-Ae-qR2"/>
     </inferredMetricsTieBreakers>
 </document>
